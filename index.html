@@ -48,28 +48,18 @@ layout: default
 
 <!-------------------------- Feature Icon Grid ------------------------------>
 
-    <sec class="padded grid bg-dark">
+    <section class="padded grid bg-dark">
         <div class="padded-sm col-12 text-center">
             <h2><span class="featured-text">features</span> you will love</h2>
         </div>
 
+    {% for item in page.featured %}
         <div class="padded-sm col-3 text-left">
             <i class="fa-solid fa-cloud"></i>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.</p>
         </div>
-        <div class="padded-sm col-3 text-left">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.</p>
-        </div>
-        <div class="padded-sm col-3 text-left">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.</p>
-        </div>
-        <div class="padded-sm col-3 text-left">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.</p>
-        </div>
-    </sec>
+     {% endfor %}
+    </section>
 
 <!-------------------------- Banner ------------------------------>
     <section class="padded text-center extra-bold bg-pillow tall-70 grid bg-image">
