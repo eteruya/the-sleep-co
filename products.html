@@ -3,10 +3,13 @@ layout: default
 cards:
  - heading: Sleep like a baby
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+   background_image: /images/the-sleep-co-2.jpg
  - heading: Dreaming of summer
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+   background_image: /images/the-sleep-co-3.jpg
  - heading: Best Nap Ever
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+   background_image: /images/the-sleep-co-1.jpg
 ---
 
 <!DOCTYPE html>
@@ -92,7 +95,7 @@ cards:
     {%for item in page.cards%}
 
     <div class="padded-m col-4 text-left">
-        <div class="bg-pillow tall-60"></div>
+        <div class="bg-image tall-60" style="background-image: url('{{item.background_image}}');"></div>
         <h2 class="little-title">{{item.heading}}</h2>
         <p>{{item.description}}</p>
     </div>
