@@ -1,5 +1,12 @@
 ---
 layout: default
+cards:
+ - heading: Sleep like a baby
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+ - heading: Dreaming of summer
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+ - heading: Best Nap Ever
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
 ---
 
 <!DOCTYPE html>
@@ -78,27 +85,19 @@ layout: default
 </section>
 
 
- <!-- ------- THIS IS THE GALLERY FEATURES GRID---------------- -->
+ <!-- ------- THIS IS THE CARDS GRID---------------- -->
 
  <section class="padded grid">
 
-    <div class="padded-m col-4 text-left">
-        <div class="bg-pillow tall-60"></div>
-        <h2 class="little-title">little heading</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates.</p>
-    </div>
-   
-    <div class="padded-m col-4 text-left">
-        <div class="bg-pillow tall-60"></div>
-        <h2 class="little-title">little heading</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates.</p>
-    </div>
+    {%for item in page.cards%}
 
     <div class="padded-m col-4 text-left">
         <div class="bg-pillow tall-60"></div>
-        <h2 class="little-title">little heading</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt quo sequi consequuntur voluptates.</p>
+        <h2 class="little-title">{{item.heading}}</h2>
+        <p>{{item.description}}</p>
     </div>
+   
+    {% endfor %}
 
 </section>
 

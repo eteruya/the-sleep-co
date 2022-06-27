@@ -1,5 +1,14 @@
 ---
 layout: default
+featured:
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+ - icon: fa-solid fa-brush
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+ - icon: fa-solid fa-paintbrush
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
+ - icon: fa-solid fa-splotch
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.
 ---
  <!-------------------------- This is our header banner ------------------------------>
 
@@ -55,8 +64,8 @@ layout: default
 
     {% for item in page.featured %}
         <div class="padded-sm col-3 text-left">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt quo sequi consequuntur voluptates, est accusamus perferendis sit eum sunt amet veniam incidunt, repudiandae eligendi. Numquam corrupti ratione saepe omnis.</p>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
         </div>
      {% endfor %}
     </section>
